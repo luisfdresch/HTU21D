@@ -1,4 +1,4 @@
-from smbus import SMBus
+from smbus2 import SMBus
 
 I2C_ADDR = 0x40
 CMD_TRIG_TEMP_HM = 0xE3
@@ -28,6 +28,6 @@ class HTU21D:
 
 if __name__ == '__main__':
     htu = HTU21D(1)
-    print htu.read_temperature()
-    print htu.read_humidity()
+    print(htu.read_temperature())
+    print(htu.read_humidity())
 
